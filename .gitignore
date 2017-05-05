@@ -1,0 +1,28 @@
+build/
+.idea/
+.gradle/
+freeline/
+freeline_core/
+freeline.py
+freeline_project_description.json
+*.iml
+/local.properties
+.DS_Store
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+obj/
+
+# KeyStore
+#*.keystore
+
+*.log
+freeline.zip.tmp
