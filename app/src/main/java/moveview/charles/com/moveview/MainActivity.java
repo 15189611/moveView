@@ -1,5 +1,7 @@
 package moveview.charles.com.moveview;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -113,6 +115,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return 0;
+    }
+
+    public void onClickJump(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("charles.com://https"));
+        startActivity(intent);
     }
 
 }
